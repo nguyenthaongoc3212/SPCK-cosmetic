@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/styles/SignUp.css">
+</head>
+<body>
+      <!-- Form đăng ký  -->
+     <form id="signup-form">
+        <h1>Đăng Ký</h1>
+        <p>Vui lòng điền thông tin để đăng ký</p>
+        <label for="username"><b>Tên đăng nhập</b></label>
+        <input type="text" name="username" id="username" placeholder="Tên đăng nhập" required>
+        <label for="password"><b>Email</b></label>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <label for="password"><b>Mật khẩu</b></label>
+        <input type="password" name="password"  id="password"placeholder="Mật khẩu" required>
+        <label for="password"><b>Nhập lại mật khẩu</b></label>
+        <input type="password" name="confirm_password" id="confirm_password" placeholder="Xác nhận mật khẩu" required>
+        <button type="submit"class="submit">Đăng ký</button>
+        <div class="register login">
+            <p>Bạn đã có tài khoản rồi? <a href="SignIn.html">Đăng nhập</a>.</p>
+          </div>
+    </form>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script src="/scripts/SignUp.js"></script>
+</body>
+</html> 
